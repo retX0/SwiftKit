@@ -7,7 +7,7 @@ import ObjectMapper
 
 protocol OffsetLoadable: Reactable {
     associatedtype E: Mappable
-    var viewModel:PaginationViewModel<E>! { get }
+//    var viewModel:PaginationViewModel<E>! { get }
 }
 
 /// UIViewController cannot user gerneric type

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import QMUIKit
 
 class Tips {
     
@@ -35,28 +36,28 @@ class Tips {
         switch type {
         case .info:
             if let detail = detail {
-                tips?.showInfo(title, detailText: detail)
+                tips.showInfo(title, detailText: detail)
             }
-            tips?.showInfo(title)
+            tips.showInfo(title)
         case .success:
             if let detail = detail {
-                tips?.showSucceed(title, detailText: detail)
+                tips.showSucceed(title, detailText: detail)
             }
-            tips?.showSucceed(title)
+            tips.showSucceed(title)
         case .error:
             if let detail = detail {
-                tips?.showError(title, detailText: detail)
+                tips.showError(title, detailText: detail)
             }
-            tips?.showError(title)
+            tips.showError(title)
         case .loading:
             if let detail = detail {
-                tips?.showLoading(title, detailText: detail)
+                tips.showLoading(title, detailText: detail)
             }
-            tips?.showLoading()
+            tips.showLoading()
         }
     }
     
-    class func showAutoHide(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil, after delay: TimeInterval = 1.5, compeletion: ((Void) -> (Void))? = nil) {
+    class func showAutoHide(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil, after delay: TimeInterval = 1.5, compeletion: (() -> (Void))? = nil) {
         
         var view = aView
         
@@ -74,24 +75,24 @@ class Tips {
         case .info:
             if let detail = detail {
                 
-                tips?.showInfo(title, detailText: detail, hideAfterDelay: delay)
+                tips.showInfo(title, detailText: detail, hideAfterDelay: delay)
             }
-            tips?.showInfo(title, hideAfterDelay: delay)
+            tips.showInfo(title, hideAfterDelay: delay)
         case .success:
             if let detail = detail {
-                tips?.showSucceed(title, detailText: detail, hideAfterDelay: delay)
+                tips.showSucceed(title, detailText: detail, hideAfterDelay: delay)
             }
-            tips?.showSucceed(title, hideAfterDelay: delay)
+            tips.showSucceed(title, hideAfterDelay: delay)
         case .error:
             if let detail = detail {
-                tips?.showError(title, detailText: detail, hideAfterDelay: delay)
+                tips.showError(title, detailText: detail, hideAfterDelay: delay)
             }
-            tips?.showError(title, hideAfterDelay: delay)
+            tips.showError(title, hideAfterDelay: delay)
         case .loading:
             if let detail = detail {
-                tips?.showLoading(title, detailText: detail, hideAfterDelay: delay)
+                tips.showLoading(title, detailText: detail, hideAfterDelay: delay)
             }
-            tips?.showLoading(title)
+            tips.showLoading(title)
         }
         
         if let closure = compeletion {

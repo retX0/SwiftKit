@@ -16,14 +16,13 @@ enum Server:String {
     case remoteTest = "https://sixsixthree.org/ssstc"
     
     static var active:Server {
-        return Server(rawValue: NetUrlTool.baseUrl())!
+        return .online
     }
 }
 
 extension TargetType {
     
     public var baseURL: URL {
-        return URL(server: Server.active)
-            .appendingPathComponent(apiVersion)
+        return URL(string:"www.baidu.com")!
     }
 }

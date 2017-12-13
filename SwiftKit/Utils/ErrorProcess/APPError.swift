@@ -55,7 +55,7 @@ extension APPError {
         case .serverThrown(let code, let msg):
             return "\(msg),状态码:\(code)"
         case .underlying(let error):
-            return XHUIHelper.errorDescription(error)
+            return error.localizedDescription
         case .alert(let error):
             return "\(error)"
         }
@@ -90,20 +90,20 @@ extension APPError {
             return appError
         }
 
-        if let actionError = error as? ActionError {
-            switch actionError {
-                case .underlyingError(let error):
-                if (error is APPError) {
-                    return error as! APPError
-                }
-                if let moyaError = error as? Moya.MoyaError {
-                    return self.moya(with: moyaError)
-                }
-                fallthrough
-            default:
-                return self.error(with: error as NSError)
-            }
-        }
+//        if let actionError = error as? ActionError {
+//            switch actionError {
+//                case .underlyingError(let error):
+//                if (error is APPError) {
+//                    return error as! APPError
+//                }
+//                if let moyaError = error as? Moya.MoyaError {
+//                    return self.moya(with: moyaError)
+//                }
+//                fallthrough
+//            default:
+//                return self.error(with: error as NSError)
+//            }
+//        }
         return self.error(with: error as NSError)
     }
     
@@ -112,8 +112,8 @@ extension APPError {
         switch error {
         case .jsonMapping:
             return .jsonDecoded
-        case .underlying(let error as NSError):
-            return self.error(with: error)
+        case .underlying(let error):
+            return self.error(with: error as! NSError)
         case .statusCode(let resp):
             return .invalidResponse(resp.response!)
         default:

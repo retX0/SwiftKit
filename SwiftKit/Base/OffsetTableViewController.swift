@@ -10,7 +10,7 @@ import UIKit
 import RxDataSources
 import RxSwift
 import ObjectMapper
-import MJRefresh
+//import MJRefresh
 
 class OffsetTableViewController: RxDesignableTableViewController {
     
@@ -52,7 +52,7 @@ class OffsetTableViewController: RxDesignableTableViewController {
 //        tableView.dg_setPullToRefreshFillColor(UIConstants.red)
 //        tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
         
-        tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(refresh))
+//        tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(refresh))
 //        tableView.autz
         edgesForExtendedLayout = .all
     }
@@ -61,20 +61,20 @@ class OffsetTableViewController: RxDesignableTableViewController {
     //MARK: action
     
     func refresh() {
-        refreshTrigger.onNext()
+//        refreshTrigger.onNext()
     }
     
-    override func fetchData() {
+    func fetchData() {
         refresh()
     }
     
     override func bindViewModel() {
         
-        isRefreshing.asObservable()
-            .filter{ $0 == false }
-            .subscribe(onNext: { [weak self] _ in
-                self?.tableView.mj_header.endRefreshing()
-            }).addDisposableTo(disposeBag)
+//        isRefreshing.asObservable()
+//            .filter{ $0 == false }
+//            .subscribe(onNext: { [weak self] _ in
+//                self?.tableView.mj_header.endRefreshing()
+//            }).addDisposableTo(disposeBag)
         
         isLoading.asObservable()
             .subscribe(onNext: { [weak self] _ in
@@ -82,9 +82,9 @@ class OffsetTableViewController: RxDesignableTableViewController {
                 let _ = self
             }).addDisposableTo(disposeBag)
         
-        tableView.rx.reachedBottom.asObservable()
-            .bind(to: loadmoreTrigger)
-            .addDisposableTo(disposeBag)
+//        tableView.rx.reachedBottom.asObservable()
+//            .bind(to: loadmoreTrigger)
+//            .addDisposableTo(disposeBag)
         
         rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
             .map { _ in () }

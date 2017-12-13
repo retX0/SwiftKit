@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class RxDesignableTableViewController: SMCommonViewController, Reactable {
+class RxDesignableTableViewController: UIViewController, Reactable {
 
     //MARK: -
     //MARK: outlet

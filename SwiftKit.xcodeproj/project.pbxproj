@@ -37,6 +37,16 @@
 		3EEBF3201FE115E200F50D1F /* DecimalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3041FE115E100F50D1F /* DecimalExtension.swift */; };
 		3EEBF3211FE115E200F50D1F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3051FE115E100F50D1F /* DateExtension.swift */; };
 		3EEBF3221FE115E200F50D1F /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3071FE115E100F50D1F /* Tips.swift */; };
+		3EEBF3321FE11F0200F50D1F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3281FE11F0100F50D1F /* RxCocoa.framework */; };
+		3EEBF3331FE11F0200F50D1F /* QMUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3291FE11F0100F50D1F /* QMUIKit.framework */; };
+		3EEBF3341FE11F0200F50D1F /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32A1FE11F0100F50D1F /* OHHTTPStubs.framework */; };
+		3EEBF3351FE11F0200F50D1F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32B1FE11F0100F50D1F /* Result.framework */; };
+		3EEBF3361FE11F0200F50D1F /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32C1FE11F0100F50D1F /* RxDataSources.framework */; };
+		3EEBF3371FE11F0200F50D1F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32D1FE11F0100F50D1F /* RxSwift.framework */; };
+		3EEBF3381FE11F0200F50D1F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32E1FE11F0200F50D1F /* Alamofire.framework */; };
+		3EEBF3391FE11F0200F50D1F /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32F1FE11F0200F50D1F /* Moya.framework */; };
+		3EEBF33A1FE11F0200F50D1F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3301FE11F0200F50D1F /* RxMoya.framework */; };
+		3EEBF33B1FE11F0200F50D1F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +93,16 @@
 		3EEBF3041FE115E100F50D1F /* DecimalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalExtension.swift; sourceTree = "<group>"; };
 		3EEBF3051FE115E100F50D1F /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		3EEBF3071FE115E100F50D1F /* Tips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		3EEBF3281FE11F0100F50D1F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3EEBF3291FE11F0100F50D1F /* QMUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QMUIKit.framework; path = Carthage/Build/iOS/QMUIKit.framework; sourceTree = "<group>"; };
+		3EEBF32A1FE11F0100F50D1F /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		3EEBF32B1FE11F0100F50D1F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		3EEBF32C1FE11F0100F50D1F /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		3EEBF32D1FE11F0100F50D1F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3EEBF32E1FE11F0200F50D1F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3EEBF32F1FE11F0200F50D1F /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		3EEBF3301FE11F0200F50D1F /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +110,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEBF3391FE11F0200F50D1F /* Moya.framework in Frameworks */,
+				3EEBF3341FE11F0200F50D1F /* OHHTTPStubs.framework in Frameworks */,
+				3EEBF33B1FE11F0200F50D1F /* ObjectMapper.framework in Frameworks */,
+				3EEBF3321FE11F0200F50D1F /* RxCocoa.framework in Frameworks */,
+				3EEBF3371FE11F0200F50D1F /* RxSwift.framework in Frameworks */,
+				3EEBF3361FE11F0200F50D1F /* RxDataSources.framework in Frameworks */,
+				3EEBF33A1FE11F0200F50D1F /* RxMoya.framework in Frameworks */,
+				3EEBF3381FE11F0200F50D1F /* Alamofire.framework in Frameworks */,
+				3EEBF3331FE11F0200F50D1F /* QMUIKit.framework in Frameworks */,
+				3EEBF3351FE11F0200F50D1F /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +140,7 @@
 				3EEBF2CC1FE114B500F50D1F /* SwiftKit */,
 				3EEBF2D71FE114B600F50D1F /* SwiftKitTests */,
 				3EEBF2CB1FE114B500F50D1F /* Products */,
+				3EEBF3251FE11ED700F50D1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +270,23 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		3EEBF3251FE11ED700F50D1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EEBF32E1FE11F0200F50D1F /* Alamofire.framework */,
+				3EEBF32F1FE11F0200F50D1F /* Moya.framework */,
+				3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */,
+				3EEBF32A1FE11F0100F50D1F /* OHHTTPStubs.framework */,
+				3EEBF3291FE11F0100F50D1F /* QMUIKit.framework */,
+				3EEBF32B1FE11F0100F50D1F /* Result.framework */,
+				3EEBF3281FE11F0100F50D1F /* RxCocoa.framework */,
+				3EEBF32C1FE11F0100F50D1F /* RxDataSources.framework */,
+				3EEBF3301FE11F0200F50D1F /* RxMoya.framework */,
+				3EEBF32D1FE11F0100F50D1F /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -257,10 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EEBF2DE1FE114B600F50D1F /* Build configuration list for PBXNativeTarget "SwiftKit" */;
 			buildPhases = (
+				3EEBF3241FE11ECF00F50D1F /* ShellScript */,
 				3EEBF2C51FE114B500F50D1F /* Sources */,
 				3EEBF2C61FE114B500F50D1F /* Frameworks */,
 				3EEBF2C71FE114B500F50D1F /* Headers */,
 				3EEBF2C81FE114B500F50D1F /* Resources */,
+				3EEBF3231FE11ECD00F50D1F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -343,6 +393,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EEBF3231FE11ECD00F50D1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		3EEBF3241FE11ECF00F50D1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EEBF2C51FE114B500F50D1F /* Sources */ = {
@@ -521,8 +600,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnxin.SwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -542,8 +626,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnxin.SwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

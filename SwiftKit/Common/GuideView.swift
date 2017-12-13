@@ -49,11 +49,11 @@ class GuideView: UIView {
         
         scrollView.frame = bounds
         
-        doneButton.right = width - 20
-        doneButton.top = 20
-        
-        pageControl.centerX = width/2
-        pageControl.bottom = bottom - 20
+//        doneButton.right = width - 20
+//        doneButton.top = 20
+//        
+//        pageControl.centerX = width/2
+//        pageControl.bottom = bottom - 20
     }
     
     //MARK: -
@@ -100,13 +100,13 @@ class GuideView: UIView {
         pageControl = UIPageControl()
         pageControl.numberOfPages = numOfPages
         pageControl.sizeToFit()
-        pageControl.currentPageIndicatorTintColor = UIConstants.tintColor
-        pageControl.pageIndicatorTintColor = UIConstants.labelGray
+//        pageControl.currentPageIndicatorTintColor = UIConstants.tintColor
+//        pageControl.pageIndicatorTintColor = UIConstants.labelGray
         pageControl.currentPage = 0
         addSubview(pageControl)
     }
     
-    func doneButtonTapped() {
+    @objc func doneButtonTapped() {
         if let delegate = delegate {
             delegate.doneButtonTapped()
         }

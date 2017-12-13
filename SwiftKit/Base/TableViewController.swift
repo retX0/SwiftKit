@@ -29,7 +29,7 @@ class TableViewController: QMUICommonTableViewController {
 	}
 
 	deinit {
-		log("\(String(describing: self)) deinited")
+//        log("\(String(describing: self)) deinited")
 	}
 }
 

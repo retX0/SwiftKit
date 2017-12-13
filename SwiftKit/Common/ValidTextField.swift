@@ -76,8 +76,7 @@ class ValidTextField: QMUITextField {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        warningImg.originX = max(button.width - rightInset - warningImg.width, 0)
-        warningImg.centerY = button.height/2;
+
         
         popupView.maximumWidth = self.frame.size.width
         popupView.layoutWithTargetRect(inScreenCoordinate: warningImg.convert(warningImg.bounds, to: UIApplication.shared.keyWindow))
@@ -92,7 +91,7 @@ class ValidTextField: QMUITextField {
     func setupUI() {
         button.addSubview(warningImg)
         rightView = button;
-        button.addTarget(self, action: #selector(showError), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(showError), for: .touchUpInside)
     }
     
     func showError() {

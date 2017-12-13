@@ -8,10 +8,10 @@
 
 import UIKit
 
-open class ViewController: SMCommonViewController {
+open class ViewController: UIViewController {
 
     deinit {
-        log("\(String(describing: self)) deinited")
+//        log("\(String(describing: self)) deinited")
     }
     
     override open func viewDidLoad() {
@@ -30,7 +30,7 @@ extension ErrorDisplayable where Self: ViewController {
     func raise(error: Error) {
         
         let title = error.localizedDescription
-        log("\n\n\n\n raise error \(title)")
+//        log("\n\n\n\n raise error \(title)")
     }
 }
 

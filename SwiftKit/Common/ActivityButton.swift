@@ -13,7 +13,8 @@ import QMUIKit
 
 
 struct ActivityButtonUX {
-    static let tintColor = UIConstants.tintColor
+    //FIXME:
+    static let tintColor = UIColor.red
 }
 
 class ActivityButton: QMUIButton {
@@ -108,8 +109,8 @@ class ActivityButton: QMUIButton {
 
 extension Reactive where Base: ActivityButton {
     
-    var isShownActivity: UIBindingObserver<Base, Bool> {
-        return UIBindingObserver(UIElement: self.base) { button, value in
+    var isShownActivity: Binder<Bool> {
+        return Binder(self.base) { button, value in
             button.isShownActivity = value
         }
     }

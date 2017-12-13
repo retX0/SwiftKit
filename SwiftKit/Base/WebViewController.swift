@@ -24,11 +24,11 @@ class WebViewController: ViewController {
         super.viewDidLoad()
         assertDependencies()
         
-        guard let url = URL(url) else {
-            return
-        }
-        let request = URLRequest(url: url)
-        webView.loadRequest(request)
+//        guard let url = URL(url) else {
+//            return
+//        }
+//        let request = URLRequest(url: url)
+//        webView.loadRequest(request)
     }
     
     //MARK: -
