@@ -5,3 +5,4 @@ github "Moya/Moya"
 github "QMUI/QMUI_iOS"
 github "AliSoftware/OHHTTPStubs"
 github "RxSwiftCommunity/RxDataSources" ~> 3.0
+github "SwiftyBeaver/SwiftyBeaver"

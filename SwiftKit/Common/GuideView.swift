@@ -1,10 +1,4 @@
-//
-//  GuideView.swift
-//  Merchant
-//
-//  Created by xnxin on 2017/6/6.
-//  Copyright © 2017年 com.xnxin. All rights reserved.
-//
+
 
 import UIKit
 

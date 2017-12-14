@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import QMUIKit
 
-class TableViewController: QMUICommonTableViewController {
+open class TableViewController: QMUICommonTableViewController {
 
 	//MARK : Varibles
 
@@ -19,7 +19,7 @@ class TableViewController: QMUICommonTableViewController {
 	}
 
 
-	override func viewDidLoad() {
+	override open func viewDidLoad() {
 		super.viewDidLoad()
 
 		guard tableView.tableFooterView == nil else {

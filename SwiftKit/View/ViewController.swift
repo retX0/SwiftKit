@@ -29,7 +29,7 @@ extension ErrorDisplayable where Self: ViewController {
     
     func raise(error: Error) {
         
-        let title = error.localizedDescription
+        _ = error.localizedDescription
 //        log("\n\n\n\n raise error \(title)")
     }
 }

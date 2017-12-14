@@ -1,10 +1,3 @@
-//
-//  ActivityButton.swift
-//  ActivityButtonDemo
-//
-//  Created by xnxin on 2017/5/9.
-//  Copyright © 2017年 com.xnxin. All rights reserved.
-//
 
 import UIKit
 import RxSwift
@@ -17,13 +10,12 @@ struct ActivityButtonUX {
     static let tintColor = UIColor.red
 }
 
-class ActivityButton: QMUIButton {
-    
+open class ActivityButton: QMUIButton {
     
     //MARK: -
     //MARK: outlet && variables
     
-    var isShownActivity = false {
+    open var isShownActivity = false {
         willSet {
             
             guard newValue != isShownActivity else {
@@ -54,7 +46,7 @@ class ActivityButton: QMUIButton {
         }
     }
     
-    lazy var activityView: UIActivityIndicatorView = {
+    public lazy var activityView: UIActivityIndicatorView = {
         
         let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
         activityView.color = ActivityButtonUX.tintColor
@@ -65,13 +57,13 @@ class ActivityButton: QMUIButton {
     
     //MARK: -
     //MARK: life cycle
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupUI()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         setupUI()
@@ -81,7 +73,7 @@ class ActivityButton: QMUIButton {
     //MARK: -
     //MARK: override method
 
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         let x = (self.bounds.size.width - activityView.bounds.size.width)/2
@@ -98,7 +90,7 @@ class ActivityButton: QMUIButton {
     //MARK: private method
     
     
-    func setupUI() {
+    open func setupUI() {
         
         self.addSubview(activityView)
     }
@@ -107,9 +99,9 @@ class ActivityButton: QMUIButton {
     
 }
 
-extension Reactive where Base: ActivityButton {
+public extension Reactive where Base: ActivityButton {
     
-    var isShownActivity: Binder<Bool> {
+    public var isShownActivity: Binder<Bool> {
         return Binder(self.base) { button, value in
             button.isShownActivity = value
         }

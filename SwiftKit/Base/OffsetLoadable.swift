@@ -5,7 +5,7 @@ import ObjectMapper
 //import DZNEmptyDataSet
 
 
-protocol OffsetLoadable: Reactable {
+protocol OffsetLoadable: RxDesignable {
     associatedtype E: Mappable
 //    var viewModel:PaginationViewModel<E>! { get }
 }

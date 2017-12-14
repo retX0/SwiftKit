@@ -1,17 +1,10 @@
-//
-//  Tips.swift
-//
-//
-//  Created by xnxin on 2017/6/5.
-//  Copyright © 2017年 com.xnxin. All rights reserved.
-//
 
 import Foundation
 import QMUIKit
 
-class Tips {
+public class Tips {
     
-    enum `Type` {
+    public enum `Type` {
         case info
         case success
         case error
@@ -19,7 +12,7 @@ class Tips {
     }
     
     ///如果view是空，放到windows上
-    class func show(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil) {
+    public class func show(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil) {
         
         var view = aView
         
@@ -57,7 +50,7 @@ class Tips {
         }
     }
     
-    class func showAutoHide(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil, after delay: TimeInterval = 1.5, compeletion: (() -> (Void))? = nil) {
+    public class func showAutoHide(_ type: Type, title: String, detail: String? = nil, on aView: UIView? = nil, after delay: TimeInterval = 1.5, compeletion: (() -> (Void))? = nil) {
         
         var view = aView
         

@@ -7,31 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9B30351FE22F5F00D062C8 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9B30341FE22F5E00D062C8 /* Differentiator.framework */; };
 		3EEBF2D41FE114B600F50D1F /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF2CA1FE114B500F50D1F /* SwiftKit.framework */; };
 		3EEBF2D91FE114B600F50D1F /* SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2D81FE114B600F50D1F /* SwiftKitTests.swift */; };
 		3EEBF2DB1FE114B600F50D1F /* SwiftKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEBF2CD1FE114B500F50D1F /* SwiftKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EEBF3081FE115E200F50D1F /* APPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2E61FE115E000F50D1F /* APPError.swift */; };
-		3EEBF3091FE115E200F50D1F /* ValidTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2E81FE115E100F50D1F /* ValidTextField.swift */; };
 		3EEBF30A1FE115E200F50D1F /* ActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2E91FE115E100F50D1F /* ActivityButton.swift */; };
 		3EEBF30B1FE115E200F50D1F /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2EA1FE115E100F50D1F /* GuideView.swift */; };
 		3EEBF30C1FE115E200F50D1F /* OffsetLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2EC1FE115E100F50D1F /* OffsetLoadable.swift */; };
-		3EEBF30D1FE115E200F50D1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2ED1FE115E100F50D1F /* ViewController.swift */; };
-		3EEBF30E1FE115E200F50D1F /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2EE1FE115E100F50D1F /* RxViewController.swift */; };
 		3EEBF30F1FE115E200F50D1F /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2EF1FE115E100F50D1F /* Protocol.swift */; };
-		3EEBF3101FE115E200F50D1F /* Navigationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F01FE115E100F50D1F /* Navigationable.swift */; };
-		3EEBF3111FE115E200F50D1F /* OffsetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F11FE115E100F50D1F /* OffsetTableViewController.swift */; };
-		3EEBF3121FE115E200F50D1F /* RxDesignableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F21FE115E100F50D1F /* RxDesignableTableViewController.swift */; };
-		3EEBF3131FE115E200F50D1F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F31FE115E100F50D1F /* TableViewCell.swift */; };
-		3EEBF3141FE115E200F50D1F /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F41FE115E100F50D1F /* RxTableViewController.swift */; };
-		3EEBF3151FE115E200F50D1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F51FE115E100F50D1F /* TableViewController.swift */; };
-		3EEBF3161FE115E200F50D1F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F61FE115E100F50D1F /* WebViewController.swift */; };
-		3EEBF3171FE115E200F50D1F /* RxStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F71FE115E100F50D1F /* RxStaticTableViewController.swift */; };
-		3EEBF3181FE115E200F50D1F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F81FE115E100F50D1F /* TabBarViewController.swift */; };
-		3EEBF3191FE115E200F50D1F /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2F91FE115E100F50D1F /* NavigationItem.swift */; };
-		3EEBF31A1FE115E200F50D1F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FA1FE115E100F50D1F /* NavigationController.swift */; };
-		3EEBF31B1FE115E200F50D1F /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FC1FE115E100F50D1F /* Requestable.swift */; };
-		3EEBF31C1FE115E200F50D1F /* URLAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FD1FE115E100F50D1F /* URLAddress.swift */; };
-		3EEBF31D1FE115E200F50D1F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FE1FE115E100F50D1F /* API.swift */; };
+		3EEBF31B1FE115E200F50D1F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FC1FE115E100F50D1F /* Request.swift */; };
+		3EEBF31C1FE115E200F50D1F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF2FD1FE115E100F50D1F /* Server.swift */; };
 		3EEBF31E1FE115E200F50D1F /* ModelTranformCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3011FE115E100F50D1F /* ModelTranformCollection.swift */; };
 		3EEBF31F1FE115E200F50D1F /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3031FE115E100F50D1F /* IntExtension.swift */; };
 		3EEBF3201FE115E200F50D1F /* DecimalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBF3041FE115E100F50D1F /* DecimalExtension.swift */; };
@@ -47,6 +33,23 @@
 		3EEBF3391FE11F0200F50D1F /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF32F1FE11F0200F50D1F /* Moya.framework */; };
 		3EEBF33A1FE11F0200F50D1F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3301FE11F0200F50D1F /* RxMoya.framework */; };
 		3EEBF33B1FE11F0200F50D1F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */; };
+		3EEBF3401FE12A4500F50D1F /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBF33F1FE12A4500F50D1F /* SwiftyBeaver.framework */; };
+		6CED40829BEC1DE340A9F956 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4C58C97E6B33350A9953 /* NavigationController.swift */; };
+		6CED4189F3AC6C2EF50E08A2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED401E9B21873BDB76A4F9 /* LoginViewModel.swift */; };
+		6CED4368C92F0B409A37D728 /* OffsetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED487B2F6CD6FE44926821 /* OffsetTableViewController.swift */; };
+		6CED436F6E10E5DC010A1EF9 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED484C1B1AD5442E90109A /* RxViewController.swift */; };
+		6CED43C0F6619E85887D5FDC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4C079BD5B57B10D28290 /* Validator.swift */; };
+		6CED43C72B0C9F2CA05F5D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4E2609F1E0E6A7717491 /* ViewController.swift */; };
+		6CED452F2E78D01145D5B55B /* UserNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4D15EADF762BEEC265A3 /* UserNameValidator.swift */; };
+		6CED455482DE4188F6CC72A7 /* RxDesignableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4A198D2DBCB9A9779A06 /* RxDesignableTableViewController.swift */; };
+		6CED47524B4F3A5C4ECA5628 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4AF20B15B1F3B8E7BB74 /* TableViewController.swift */; };
+		6CED4B90E5C79A7D5A66BFBC /* RxStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED40EF90805B6388B9E79F /* RxStaticTableViewController.swift */; };
+		6CED4BC355C7BB976C79DF7A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4EBE2E24AD173835BDD0 /* TableViewCell.swift */; };
+		6CED4D5C3D6ECBA5E44783EB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4B1535BB098224B3F926 /* WebViewController.swift */; };
+		6CED4DCCE9B76FB9D16AD3FA /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4130718F9565FBB43A87 /* RxTableViewController.swift */; };
+		6CED4F2C0530A5B67C964296 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4F072598596A6130C688 /* PasswordValidator.swift */; };
+		6CED4F523E2DDDEA015D562D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED43A7A6A3CF2A74D5EF59 /* TabBarViewController.swift */; };
+		6CED4FB63EFEDB0D0E93E5B9 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED4461BE4DC34691F985F9 /* NavigationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E9B30341FE22F5E00D062C8 /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		3EEBF2CA1FE114B500F50D1F /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEBF2CD1FE114B500F50D1F /* SwiftKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftKit.h; sourceTree = "<group>"; };
 		3EEBF2CE1FE114B500F50D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,27 +71,12 @@
 		3EEBF2D81FE114B600F50D1F /* SwiftKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKitTests.swift; sourceTree = "<group>"; };
 		3EEBF2DA1FE114B600F50D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EEBF2E61FE115E000F50D1F /* APPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APPError.swift; sourceTree = "<group>"; };
-		3EEBF2E81FE115E100F50D1F /* ValidTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidTextField.swift; sourceTree = "<group>"; };
 		3EEBF2E91FE115E100F50D1F /* ActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityButton.swift; sourceTree = "<group>"; };
 		3EEBF2EA1FE115E100F50D1F /* GuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		3EEBF2EC1FE115E100F50D1F /* OffsetLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetLoadable.swift; sourceTree = "<group>"; };
-		3EEBF2ED1FE115E100F50D1F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EEBF2EE1FE115E100F50D1F /* RxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 		3EEBF2EF1FE115E100F50D1F /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		3EEBF2F01FE115E100F50D1F /* Navigationable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigationable.swift; sourceTree = "<group>"; };
-		3EEBF2F11FE115E100F50D1F /* OffsetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetTableViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F21FE115E100F50D1F /* RxDesignableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDesignableTableViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F31FE115E100F50D1F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		3EEBF2F41FE115E100F50D1F /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F51FE115E100F50D1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F61FE115E100F50D1F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F71FE115E100F50D1F /* RxStaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxStaticTableViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F81FE115E100F50D1F /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		3EEBF2F91FE115E100F50D1F /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
-		3EEBF2FA1FE115E100F50D1F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		3EEBF2FC1FE115E100F50D1F /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		3EEBF2FD1FE115E100F50D1F /* URLAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLAddress.swift; sourceTree = "<group>"; };
-		3EEBF2FE1FE115E100F50D1F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3EEBF2FC1FE115E100F50D1F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3EEBF2FD1FE115E100F50D1F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		3EEBF3011FE115E100F50D1F /* ModelTranformCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTranformCollection.swift; sourceTree = "<group>"; };
 		3EEBF3031FE115E100F50D1F /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		3EEBF3041FE115E100F50D1F /* DecimalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalExtension.swift; sourceTree = "<group>"; };
@@ -103,6 +92,23 @@
 		3EEBF32F1FE11F0200F50D1F /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		3EEBF3301FE11F0200F50D1F /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		3EEBF33F1FE12A4500F50D1F /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		6CED401E9B21873BDB76A4F9 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6CED40EF90805B6388B9E79F /* RxStaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxStaticTableViewController.swift; sourceTree = "<group>"; };
+		6CED4130718F9565FBB43A87 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
+		6CED43A7A6A3CF2A74D5EF59 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6CED4461BE4DC34691F985F9 /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		6CED484C1B1AD5442E90109A /* RxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		6CED487B2F6CD6FE44926821 /* OffsetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetTableViewController.swift; sourceTree = "<group>"; };
+		6CED4A198D2DBCB9A9779A06 /* RxDesignableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDesignableTableViewController.swift; sourceTree = "<group>"; };
+		6CED4AF20B15B1F3B8E7BB74 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6CED4B1535BB098224B3F926 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6CED4C079BD5B57B10D28290 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		6CED4C58C97E6B33350A9953 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		6CED4D15EADF762BEEC265A3 /* UserNameValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameValidator.swift; sourceTree = "<group>"; };
+		6CED4E2609F1E0E6A7717491 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CED4EBE2E24AD173835BDD0 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6CED4F072598596A6130C688 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +117,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEBF3391FE11F0200F50D1F /* Moya.framework in Frameworks */,
+				3EEBF3401FE12A4500F50D1F /* SwiftyBeaver.framework in Frameworks */,
 				3EEBF3341FE11F0200F50D1F /* OHHTTPStubs.framework in Frameworks */,
 				3EEBF33B1FE11F0200F50D1F /* ObjectMapper.framework in Frameworks */,
 				3EEBF3321FE11F0200F50D1F /* RxCocoa.framework in Frameworks */,
 				3EEBF3371FE11F0200F50D1F /* RxSwift.framework in Frameworks */,
+				3E9B30351FE22F5F00D062C8 /* Differentiator.framework in Frameworks */,
 				3EEBF3361FE11F0200F50D1F /* RxDataSources.framework in Frameworks */,
 				3EEBF33A1FE11F0200F50D1F /* RxMoya.framework in Frameworks */,
 				3EEBF3381FE11F0200F50D1F /* Alamofire.framework in Frameworks */,
@@ -164,6 +172,9 @@
 				3EEBF2E41FE115E000F50D1F /* Utils */,
 				3EEBF2CD1FE114B500F50D1F /* SwiftKit.h */,
 				3EEBF2CE1FE114B500F50D1F /* Info.plist */,
+				6CED4F37B45B0D0D94ED8D4C /* View */,
+				6CED4AC3EF19A08EF8307724 /* Modules */,
+				6CED4346640C9E396CACFBD9 /* Compoments */,
 			);
 			path = SwiftKit;
 			sourceTree = "<group>";
@@ -196,7 +207,6 @@
 		3EEBF2E71FE115E100F50D1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3EEBF2E81FE115E100F50D1F /* ValidTextField.swift */,
 				3EEBF2E91FE115E100F50D1F /* ActivityButton.swift */,
 				3EEBF2EA1FE115E100F50D1F /* GuideView.swift */,
 			);
@@ -207,20 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEBF2EC1FE115E100F50D1F /* OffsetLoadable.swift */,
-				3EEBF2ED1FE115E100F50D1F /* ViewController.swift */,
-				3EEBF2EE1FE115E100F50D1F /* RxViewController.swift */,
 				3EEBF2EF1FE115E100F50D1F /* Protocol.swift */,
-				3EEBF2F01FE115E100F50D1F /* Navigationable.swift */,
-				3EEBF2F11FE115E100F50D1F /* OffsetTableViewController.swift */,
-				3EEBF2F21FE115E100F50D1F /* RxDesignableTableViewController.swift */,
-				3EEBF2F31FE115E100F50D1F /* TableViewCell.swift */,
-				3EEBF2F41FE115E100F50D1F /* RxTableViewController.swift */,
-				3EEBF2F51FE115E100F50D1F /* TableViewController.swift */,
-				3EEBF2F61FE115E100F50D1F /* WebViewController.swift */,
-				3EEBF2F71FE115E100F50D1F /* RxStaticTableViewController.swift */,
-				3EEBF2F81FE115E100F50D1F /* TabBarViewController.swift */,
-				3EEBF2F91FE115E100F50D1F /* NavigationItem.swift */,
-				3EEBF2FA1FE115E100F50D1F /* NavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -228,9 +225,8 @@
 		3EEBF2FB1FE115E100F50D1F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3EEBF2FC1FE115E100F50D1F /* Requestable.swift */,
-				3EEBF2FD1FE115E100F50D1F /* URLAddress.swift */,
-				3EEBF2FE1FE115E100F50D1F /* API.swift */,
+				3EEBF2FC1FE115E100F50D1F /* Request.swift */,
+				3EEBF2FD1FE115E100F50D1F /* Server.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -274,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEBF32E1FE11F0200F50D1F /* Alamofire.framework */,
+				3E9B30341FE22F5E00D062C8 /* Differentiator.framework */,
 				3EEBF32F1FE11F0200F50D1F /* Moya.framework */,
 				3EEBF3311FE11F0200F50D1F /* ObjectMapper.framework */,
 				3EEBF32A1FE11F0100F50D1F /* OHHTTPStubs.framework */,
@@ -283,8 +280,70 @@
 				3EEBF32C1FE11F0100F50D1F /* RxDataSources.framework */,
 				3EEBF3301FE11F0200F50D1F /* RxMoya.framework */,
 				3EEBF32D1FE11F0100F50D1F /* RxSwift.framework */,
+				3EEBF33F1FE12A4500F50D1F /* SwiftyBeaver.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CED4346640C9E396CACFBD9 /* Compoments */ = {
+			isa = PBXGroup;
+			children = (
+				6CED4E11AFB46A5AA9059813 /* Login */,
+			);
+			path = Compoments;
+			sourceTree = "<group>";
+		};
+		6CED49A0569F81DD63FC50B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6CED401E9B21873BDB76A4F9 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6CED4AC3EF19A08EF8307724 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6CED4E11AFB46A5AA9059813 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6CED49A0569F81DD63FC50B2 /* ViewModel */,
+				6CED4C079BD5B57B10D28290 /* Validator.swift */,
+				6CED4E1C42B78D8E94D8B8F9 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6CED4E1C42B78D8E94D8B8F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CED4D15EADF762BEEC265A3 /* UserNameValidator.swift */,
+				6CED4F072598596A6130C688 /* PasswordValidator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CED4F37B45B0D0D94ED8D4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CED4C58C97E6B33350A9953 /* NavigationController.swift */,
+				6CED4461BE4DC34691F985F9 /* NavigationItem.swift */,
+				6CED4E2609F1E0E6A7717491 /* ViewController.swift */,
+				6CED4B1535BB098224B3F926 /* WebViewController.swift */,
+				6CED4AF20B15B1F3B8E7BB74 /* TableViewController.swift */,
+				6CED4A198D2DBCB9A9779A06 /* RxDesignableTableViewController.swift */,
+				6CED4130718F9565FBB43A87 /* RxTableViewController.swift */,
+				6CED484C1B1AD5442E90109A /* RxViewController.swift */,
+				6CED487B2F6CD6FE44926821 /* OffsetTableViewController.swift */,
+				6CED43A7A6A3CF2A74D5EF59 /* TabBarViewController.swift */,
+				6CED40EF90805B6388B9E79F /* RxStaticTableViewController.swift */,
+				6CED4EBE2E24AD173835BDD0 /* TableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +370,7 @@
 				3EEBF2C71FE114B500F50D1F /* Headers */,
 				3EEBF2C81FE114B500F50D1F /* Resources */,
 				3EEBF3231FE11ECD00F50D1F /* ShellScript */,
+				3E9B30361FE22FD300D062C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -395,18 +455,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3E9B30361FE22FD300D062C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/RevealServer.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RevealServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  /usr/local/bin/carthage copy-frameworks\nfi\n";
+		};
 		3EEBF3231FE11ECD00F50D1F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/QMUIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
 			);
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OHHTTPStubs.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/QMUIKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxDataSources.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Differentiator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		3EEBF3241FE11ECF00F50D1F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -428,33 +527,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EEBF31D1FE115E200F50D1F /* API.swift in Sources */,
-				3EEBF31C1FE115E200F50D1F /* URLAddress.swift in Sources */,
-				3EEBF3191FE115E200F50D1F /* NavigationItem.swift in Sources */,
-				3EEBF3141FE115E200F50D1F /* RxTableViewController.swift in Sources */,
-				3EEBF3151FE115E200F50D1F /* TableViewController.swift in Sources */,
+				3EEBF31C1FE115E200F50D1F /* Server.swift in Sources */,
 				3EEBF3211FE115E200F50D1F /* DateExtension.swift in Sources */,
 				3EEBF31F1FE115E200F50D1F /* IntExtension.swift in Sources */,
-				3EEBF30D1FE115E200F50D1F /* ViewController.swift in Sources */,
-				3EEBF30E1FE115E200F50D1F /* RxViewController.swift in Sources */,
-				3EEBF31B1FE115E200F50D1F /* Requestable.swift in Sources */,
-				3EEBF3091FE115E200F50D1F /* ValidTextField.swift in Sources */,
+				3EEBF31B1FE115E200F50D1F /* Request.swift in Sources */,
 				3EEBF30F1FE115E200F50D1F /* Protocol.swift in Sources */,
 				3EEBF31E1FE115E200F50D1F /* ModelTranformCollection.swift in Sources */,
 				3EEBF3081FE115E200F50D1F /* APPError.swift in Sources */,
-				3EEBF3121FE115E200F50D1F /* RxDesignableTableViewController.swift in Sources */,
 				3EEBF30A1FE115E200F50D1F /* ActivityButton.swift in Sources */,
-				3EEBF3181FE115E200F50D1F /* TabBarViewController.swift in Sources */,
 				3EEBF3221FE115E200F50D1F /* Tips.swift in Sources */,
-				3EEBF3101FE115E200F50D1F /* Navigationable.swift in Sources */,
-				3EEBF31A1FE115E200F50D1F /* NavigationController.swift in Sources */,
 				3EEBF30C1FE115E200F50D1F /* OffsetLoadable.swift in Sources */,
-				3EEBF3131FE115E200F50D1F /* TableViewCell.swift in Sources */,
-				3EEBF3111FE115E200F50D1F /* OffsetTableViewController.swift in Sources */,
 				3EEBF3201FE115E200F50D1F /* DecimalExtension.swift in Sources */,
-				3EEBF3161FE115E200F50D1F /* WebViewController.swift in Sources */,
 				3EEBF30B1FE115E200F50D1F /* GuideView.swift in Sources */,
-				3EEBF3171FE115E200F50D1F /* RxStaticTableViewController.swift in Sources */,
+				6CED40829BEC1DE340A9F956 /* NavigationController.swift in Sources */,
+				6CED4FB63EFEDB0D0E93E5B9 /* NavigationItem.swift in Sources */,
+				6CED43C72B0C9F2CA05F5D3D /* ViewController.swift in Sources */,
+				6CED4D5C3D6ECBA5E44783EB /* WebViewController.swift in Sources */,
+				6CED47524B4F3A5C4ECA5628 /* TableViewController.swift in Sources */,
+				6CED455482DE4188F6CC72A7 /* RxDesignableTableViewController.swift in Sources */,
+				6CED4DCCE9B76FB9D16AD3FA /* RxTableViewController.swift in Sources */,
+				6CED436F6E10E5DC010A1EF9 /* RxViewController.swift in Sources */,
+				6CED4368C92F0B409A37D728 /* OffsetTableViewController.swift in Sources */,
+				6CED4F523E2DDDEA015D562D /* TabBarViewController.swift in Sources */,
+				6CED4B90E5C79A7D5A66BFBC /* RxStaticTableViewController.swift in Sources */,
+				6CED4BC355C7BB976C79DF7A /* TableViewCell.swift in Sources */,
+				6CED4189F3AC6C2EF50E08A2 /* LoginViewModel.swift in Sources */,
+				6CED43C0F6619E85887D5FDC /* Validator.swift in Sources */,
+				6CED452F2E78D01145D5B55B /* UserNameValidator.swift in Sources */,
+				6CED4F2C0530A5B67C964296 /* PasswordValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,7 @@ extension DateFormatter {
 extension String {
     func date() -> Date? {
 
-        let length = self.characters.count
+        let length = self.count
         
 //        guard self.isNumber == false else {
 //            

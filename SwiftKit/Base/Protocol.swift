@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-protocol Viewable {
+public protocol Viewable {
     
     /// initialize UI compoment in this method
     /// call this method on
@@ -17,21 +17,19 @@ protocol Viewable {
     func initializeUI()
 }
 
-protocol Reactable {
+public protocol RxDesignable {
     
     
-    /// all reacrivealbe has the disposeBag to collect all Observerable
+    /// all observers has the disposeBag to collect all Observable
     var disposeBag:DisposeBag { get }
     
-    /// bind viewmodel to view.
+    /// bind viewModel to view.
     func bindViewModel()
 }
 
-protocol Loadingable {
-    
-    
+public protocol DataFetch {
     /// process data or request data from internet.
-    /// override to show the empry view for UI.
+    /// override to show the empty view for UI.
     func loading()
     
     /// when fetch data, it`ll automatically call this 
@@ -39,14 +37,13 @@ protocol Loadingable {
     func done()
 }
 
-protocol Injectable {
+public protocol Injectable {
     associatedtype T
+
     func inject(_: T)
     func assertDependencies()
 }
 
-protocol ErrorDisplayable {
-    
+public protocol ErrorDisplayable {
     func raise(error:Error)
-    
 }

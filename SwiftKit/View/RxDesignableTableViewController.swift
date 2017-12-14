@@ -1,20 +1,22 @@
 //
-//  RxStaticTableViewController.swift
-//  Merchant
+//  RxDesignableTableViewController.swift
+//  Consumer
 //
-//  Created by xnxin on 2017/6/2.
-//  Copyright © 2017年 com.xnxin. All rights reserved.
+//  Created by xnxin on 2017/5/15.
+//  Copyright © 2017年 cn.ssstc.consumer. All rights reserved.
 //
 
 import UIKit
 import RxSwift
+import RxCocoa
 
-class RxStaticTableViewController: UITableViewController, Reactable {
+class RxDesignableTableViewController: UIViewController, RxDesignable {
 
     //MARK: -
     //MARK: outlet
     
-    private(set) var disposeBag = DisposeBag()
+    public private(set) var disposeBag = DisposeBag()
+    @IBOutlet var tableView: UITableView!
     
     //MARK: -
     //MARK: life cycle
@@ -25,7 +27,7 @@ class RxStaticTableViewController: UITableViewController, Reactable {
         rx.sentMessage(#selector(viewDidLoad))
             .subscribe(onNext: {[weak self] _ in
                 self?.bindViewModel()
-            }).addDisposableTo(disposeBag)
+            }).disposed(by: disposeBag)
         
     }
     

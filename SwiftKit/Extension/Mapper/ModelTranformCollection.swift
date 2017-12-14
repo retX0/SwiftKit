@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class DecimalTransform: TransformType {
+public class DecimalTransform: TransformType {
     
     public typealias Object = Decimal
     public typealias JSON = String
@@ -37,13 +37,13 @@ class DecimalTransform: TransformType {
 }
 
 
-class BoolTransform: TransformType {
+public class BoolTransform: TransformType {
     public typealias Object = Bool
     public typealias JSON = String
     
     public init() {}
     
-    func transformFromJSON(_ value: Any?) -> Bool? {
+    public func transformFromJSON(_ value: Any?) -> Bool? {
         if let value = value as? Bool {
             return value
         }
@@ -63,7 +63,7 @@ class BoolTransform: TransformType {
         return false
     }
     
-    func transformToJSON(_ value: Bool?) -> String? {
+    public func transformToJSON(_ value: Bool?) -> String? {
         
         guard let value = value else {
             return "N"
@@ -78,13 +78,13 @@ class BoolTransform: TransformType {
 }
 
 
-class DateTransform: TransformType {
+public class DateTransform: TransformType {
     public typealias Object = Date
     public typealias JSON = String
     
     public init() {}
     
-    func transformFromJSON(_ value: Any?) -> Date? {
+    public func transformFromJSON(_ value: Any?) -> Date? {
         
         if value is String {
             let string = value as! String
@@ -106,7 +106,7 @@ class DateTransform: TransformType {
         return nil
     }
     
-    func transformToJSON(_ value: Date?) -> String? {
+    public func transformToJSON(_ value: Date?) -> String? {
         return value?.string(format: "yyyy-MM-dd HH:mm:SSS")
     }
 }

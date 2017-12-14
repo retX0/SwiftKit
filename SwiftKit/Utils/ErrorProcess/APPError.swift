@@ -1,10 +1,3 @@
-//
-//  APIError.swift
-//  BCLifeM
-//
-//  Created by xnxin on 2016/11/9.
-//  Copyright © 2016年 xnxin. All rights reserved.
-//
 
 import Foundation
 import Moya
@@ -112,8 +105,8 @@ extension APPError {
         switch error {
         case .jsonMapping:
             return .jsonDecoded
-        case .underlying(let error):
-            return self.error(with: error as! NSError)
+//        case .underlying(let error):
+//            return self.error(with: error as! NSError)
         case .statusCode(let resp):
             return .invalidResponse(resp.response!)
         default:

@@ -9,29 +9,30 @@
 import UIKit
 import RxSwift
 
-class RxViewController: ViewController, Reactable {
+open class RxViewController: ViewController, RxDesignable {
 
     //MARK: -
     //MARK: outlet
-    private(set) var disposeBag = DisposeBag()
+    public private(set) var disposeBag = DisposeBag()
     
     //MARK: -
     //MARK: life cycle
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         
     }
-    override func viewDidLoad() {
+
+    override open func viewDidLoad() {
         super.viewDidLoad()
     }
     
     
     //MARK: -
     //MARK: action
-    func bindViewModel() {}
+    open func bindViewModel() {}
     
-    func rebindViewModel() {
+    open func rebindViewModel() {
         
         disposeBag = DisposeBag()
         bindViewModel()
@@ -40,12 +41,12 @@ class RxViewController: ViewController, Reactable {
     //MARK: -
     //MARK: override method
     
-    override func loadView() {
+    override open func loadView() {
         super.loadView()
         
         rx.sentMessage(#selector(UIViewController.viewDidLoad))
             .subscribe(onNext: {[weak self] _ in
                 self?.bindViewModel()
-            }).addDisposableTo(disposeBag)
+            }).disposed(by: disposeBag)
     }
 }

@@ -10,7 +10,6 @@ import UIKit
 import RxDataSources
 import RxSwift
 import ObjectMapper
-//import MJRefresh
 
 class OffsetTableViewController: RxDesignableTableViewController {
     
@@ -21,7 +20,7 @@ class OffsetTableViewController: RxDesignableTableViewController {
     let isRefreshing = Variable<Bool>(false)
     let isLoadingMore = Variable<Bool>(false)
     let refreshTrigger = PublishSubject<Void>()
-    let loadmoreTrigger = PublishSubject<Void>()
+    let loadMoreTrigger = PublishSubject<Void>()
     
     
     //MARK: -
@@ -41,8 +40,8 @@ class OffsetTableViewController: RxDesignableTableViewController {
         super.loadView()
         
         navigationController?.navigationBar.isTranslucent = false
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         
 //        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
 //        loadingView.tintColor = UIColor.white
@@ -80,7 +79,7 @@ class OffsetTableViewController: RxDesignableTableViewController {
             .subscribe(onNext: { [weak self] _ in
 //                self?.tableView.reloadEmptyDataSet()
                 let _ = self
-            }).addDisposableTo(disposeBag)
+            }).disposed(by: disposeBag)
         
 //        tableView.rx.reachedBottom.asObservable()
 //            .bind(to: loadmoreTrigger)
@@ -89,7 +88,7 @@ class OffsetTableViewController: RxDesignableTableViewController {
         rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
             .map { _ in () }
             .bind(to: refreshTrigger)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
 
     }
     

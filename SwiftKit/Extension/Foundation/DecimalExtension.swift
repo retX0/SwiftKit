@@ -8,10 +8,9 @@
 
 import UIKit
 
-extension NSNumber {
+public extension NSNumber {
 
-    
-    var money: String {
+    public var money: String {
         
         let formatter = NumberFormatter()
         formatter.positiveFormat = "###,##0.00;"
@@ -19,22 +18,22 @@ extension NSNumber {
     }
 }
 
-extension Decimal {
+public extension Decimal {
     
-    var percent: String {
+    public var percent: String {
         
         get {
             return (self * 100).money
         }
         
         set {
-            
             let tmp = Double(newValue) ?? 0 / 100
             self = Decimal(floatLiteral: tmp)
         }
     }
-    
-    var money: String {
+
+    //used for money display
+    public var money: String {
         let tmp = NSDecimalNumber(decimal: self)
         return tmp.money
     }

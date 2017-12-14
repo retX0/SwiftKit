@@ -10,7 +10,7 @@ import Foundation
 
 public extension Int {
     
-    var numDisplay: String {
+    public var numDisplay: String {
         
         if (self == -1) {
             return "Unlimited"
@@ -19,7 +19,7 @@ public extension Int {
         }
     }
     
-    func toString() -> String {
+    public func toString() -> String {
         return self.description
     }
 }

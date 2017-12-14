@@ -10,7 +10,7 @@ import UIKit
 
 
 @IBDesignable
-class TableViewCell: UITableViewCell {
+open class TableViewCell: UITableViewCell {
 
     @IBInspectable var grayIsHidden: Bool = false {
         didSet {
@@ -18,18 +18,18 @@ class TableViewCell: UITableViewCell {
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         

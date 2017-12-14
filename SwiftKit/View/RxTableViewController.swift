@@ -9,37 +9,36 @@
 import UIKit
 import RxSwift
 
-class RxTableViewController: TableViewController, Reactable {
+open class RxTableViewController: TableViewController, RxDesignable {
 
     //MARK: -
     //MARK: outlet
 
-    private(set) var disposeBag = DisposeBag()
+    public private(set) var disposeBag = DisposeBag()
 
     //MARK: - 
     //MARK: life cycle
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         
         rx.sentMessage(#selector(viewDidLoad))
             .subscribe(onNext: {[weak self] _ in
                 self?.bindViewModel()
-            }).addDisposableTo(disposeBag)
+            }).disposed(by: disposeBag)
         
     }
 
     //MARK: -
     //MARK: action
     
-    func bindViewModel() {}
+    open func bindViewModel() {}
     
-    func rebindViewModel() {
+    open func rebindViewModel() {
         disposeBag = DisposeBag()
         bindViewModel()
     }
     
     //MARK: -
     //MARK: override method
-
 }

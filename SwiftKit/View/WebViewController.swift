@@ -8,22 +8,21 @@
 
 import UIKit
 
-class WebViewController: ViewController {
+open class WebViewController: ViewController {
 
     
     //MARK: -
     //MARK: outlet && variables
     
-    @IBOutlet var webView: UIWebView!
+    @IBOutlet public var webView: UIWebView!
     
-    var url: String!
+    open var url: String!
     //MARK: -
     //MARK: life cycle
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
-        assertDependencies()
-        
+
 //        guard let url = URL(url) else {
 //            return
 //        }
@@ -42,14 +41,14 @@ class WebViewController: ViewController {
 
 }
 
-extension WebViewController: Injectable {
-    typealias T = String
-    
-    func inject(_ url: T) {
-        self.url = url
-    }
-    
-    func assertDependencies() {
-        assert(url != nil)
-    }
-}
+//public extension WebViewController: Injectable {
+//    typealias T = String
+//
+//    public func inject(_ url: T) {
+//        self.url = url
+//    }
+//
+//    public func assertDependencies() {
+//        assert(url != nil)
+//    }
+//}
